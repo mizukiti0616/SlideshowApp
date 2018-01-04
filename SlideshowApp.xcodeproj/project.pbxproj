@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1812B2501FF4FA2300EBFCD3 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1812B24F1FF4FA2300EBFCD3 /* ResultViewController.swift */; };
 		1822DD331FEE495900216171 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1822DD321FEE495900216171 /* AppDelegate.swift */; };
 		1822DD351FEE495A00216171 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1822DD341FEE495A00216171 /* ViewController.swift */; };
 		1822DD381FEE495A00216171 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1822DD361FEE495A00216171 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1812B24F1FF4FA2300EBFCD3 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResultViewController.swift; path = ../ResultViewController.swift; sourceTree = "<group>"; };
 		1822DD2F1FEE495900216171 /* SlideshowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideshowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1822DD321FEE495900216171 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1822DD341FEE495A00216171 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 		1822DD311FEE495900216171 /* SlideshowApp */ = {
 			isa = PBXGroup;
 			children = (
+				1812B24F1FF4FA2300EBFCD3 /* ResultViewController.swift */,
 				1822DD321FEE495900216171 /* AppDelegate.swift */,
 				1822DD341FEE495A00216171 /* ViewController.swift */,
 				1822DD361FEE495A00216171 /* Main.storyboard */,
@@ -261,6 +264,7 @@
 			files = (
 				1822DD351FEE495A00216171 /* ViewController.swift in Sources */,
 				1822DD331FEE495900216171 /* AppDelegate.swift in Sources */,
+				1812B2501FF4FA2300EBFCD3 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +509,7 @@
 				1822DD591FEE495A00216171 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1822DD5A1FEE495A00216171 /* Build configuration list for PBXNativeTarget "SlideshowAppTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +518,7 @@
 				1822DD5C1FEE495A00216171 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1822DD5D1FEE495A00216171 /* Build configuration list for PBXNativeTarget "SlideshowAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +527,7 @@
 				1822DD5F1FEE495A00216171 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
