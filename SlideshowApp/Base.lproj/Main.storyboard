@@ -22,11 +22,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UV4-8a-kZg">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UV4-8a-kZg">
                                 <rect key="frame" x="72" y="55" width="222" height="240"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="240" id="8Rp-oD-7Uo"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="DnI-c4-sBL" appends="YES" id="AMk-mZ-ro9"/>
+                                </connections>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jkg-Fj-0jW">
                                 <rect key="frame" x="72" y="585" width="31" height="30"/>
@@ -71,8 +75,13 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="DnI-c4-sBL">
+                    <connections>
+                        <segue destination="yqh-N6-pfO" kind="show" id="Ae0-nn-AhJ"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="356" y="73.313343328335833"/>
+            <point key="canvasLocation" x="310" y="-36"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="hgL-tb-fLj">
@@ -85,12 +94,34 @@
                     <view key="view" contentMode="scaleToFill" id="Rao-yD-h9r">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YcY-b6-pax">
+                                <rect key="frame" x="67" y="67" width="240" height="242"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l0b-lx-cba">
+                                <rect key="frame" x="147" y="479" width="81" height="30"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <segue destination="fuM-Zs-c25" kind="unwind" unwindAction="unwind:" id="Qcn-bi-DgW"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HtY-oO-Pwz" firstAttribute="top" secondItem="l0b-lx-cba" secondAttribute="bottom" constant="158" id="Eew-HX-zoM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="l0b-lx-cba" secondAttribute="trailing" constant="131" id="IOB-Pj-lVK"/>
+                            <constraint firstItem="l0b-lx-cba" firstAttribute="leading" secondItem="Rao-yD-h9r" secondAttribute="leadingMargin" constant="131" id="Zq4-SW-eit"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="Image" destination="YcY-b6-pax" id="uEg-gr-s0I"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5fO-tq-z67" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="fuM-Zs-c25" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1023" y="73"/>
+            <point key="canvasLocation" x="917.60000000000002" y="-36.431784107946029"/>
         </scene>
     </scenes>
 </document>

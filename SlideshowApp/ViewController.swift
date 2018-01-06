@@ -38,6 +38,8 @@ class ViewController: UIViewController {
     }
     @IBOutlet weak var Image: UIImageView!
     
+    @IBAction func unwind(_ segue: UIStoryboardSegue) {
+    }
     var timer_sec: Float = 0
     var timer: Timer?
     var imageIndex2 = 0
@@ -57,6 +59,19 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // segueから遷移先のResultViewControllerを取得する
+        let resultViewController:ResultViewController = segue.destination as! ResultViewController
+        // 遷移先のResultViewControllerで宣言しているx, yに値を代入して渡す
+        resultViewController.name = Image.image!
+        
+    }
+    
+    
+    
+    
+    
+    
     func updateTimer(timer: Timer) {
         self.timer_sec += 1
         imageIndex += 1;

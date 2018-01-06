@@ -9,10 +9,18 @@
 import UIKit
 
 class ResultViewController: UIViewController {
+    @IBOutlet weak var Image: UIImageView!
+    
+     var name : UIImage!
+    
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let result = name
+        Image.image = result
         // Do any additional setup after loading the view.
     }
 
